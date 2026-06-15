@@ -34,7 +34,6 @@ export default function App() {
   const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
-    // Встановлюємо атрибут для CSS змінних
     document.documentElement.setAttribute('data-theme', theme);
     document.title = "Maxym Melnychuk | Web Developer";
   }, [theme]);
